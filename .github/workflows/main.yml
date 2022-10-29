@@ -3,7 +3,8 @@ name: googleTrend
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 4 * * 1" # every Monday at 4 am
+    
 
 jobs:
   autoscrape:
