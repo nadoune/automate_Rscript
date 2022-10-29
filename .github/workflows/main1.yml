@@ -23,6 +23,19 @@ jobs:
     # Run R script
     - name: Recession_Trend
       run: Rscript Google_Trend.R
+      
+    # Save packages in Cache to save on time processing
+    - name: Cache R packages
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.R_LIBS_USER }}
+        key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+        restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+    - name: Install dependencies
+      run: |
+        remotes::install_deps(dependencies = TRUE)
+      shell: Rscript {0}
 
     # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
