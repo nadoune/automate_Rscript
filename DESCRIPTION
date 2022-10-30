@@ -2,12 +2,12 @@ Package: ScheduledCommitAction
 Title: Running R Scripts on a Schedule with GitHub Actions
 Version: 1.0.0
 Authors@R: 
-    person(given = "Simon",
-           family = "Couch",
+    person(given = "Nada",
+           family = "Habli",
            role = c("aut", "cre"),
            email = "nhabl094@uottawa.ca")
 Description: Contains an example repository for running R scripts on a schedule
-    and commiting their results. See the accompanying blog post!
+    and commiting their results.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
