@@ -2,13 +2,13 @@
 name: googleTrend
 
 # Controls when the action will run.
-on:
-  push:
-     branches: main
-
 #on:
-#  schedule:
-#  - cron: "0 1 1 1 *"
+#  push:
+#     branches: main
+
+on:
+  schedule:
+  - cron: "0 1 1 1 *"
 
 jobs:
   autoscrape:
