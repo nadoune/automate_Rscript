@@ -12,9 +12,11 @@ supplyChain <- gtrendsR::gtrends("Supply chain", onlyInterest = TRUE, geo = "CA-
 supplyChain1 <-data.frame(supplyChain$interest_over_time)
 
 
-write.csv(recession1,   file = paste0("data/Recession_trends_"  , make.names(Sys.time()), ".csv"),row.names = F)
-write.csv(inflation1,   file = paste0("data/Inflation_trends_"  , make.names(Sys.time()), ".csv"),row.names = F)
-write.csv(supplyChain1, file = paste0("data/supplyChain_trends_", make.names(Sys.time()), ".csv"),row.names = F)
+#write.csv(recession1,   file = paste0("data/Recession_trends_"  , make.names(Sys.time()), ".csv"),row.names = F)
+#write.csv(inflation1,   file = paste0("data/Inflation_trends_"  , make.names(Sys.time()), ".csv"),row.names = F)
+#write.csv(supplyChain1, file = paste0("data/supplyChain_trends_", make.names(Sys.time()), ".csv"),row.names = F)
 
-#write.csv(data1, file = paste0("data/Recession_trends.csv"), row.names = F)
+write.csv(recession1, file   = paste0("data/Recession_trends.csv")  , row.names = F)
+write.csv(inflation1, file   = paste0("data/Inflation_trends.csv")  , row.names = F)
+write.csv(supplyChain1, file = paste0("data/SupplyChain_trends.csv"), row.names = F)
 
