@@ -1,14 +1,14 @@
 library(gtrendsR)
 
-recession <- gtrendsR::gtrends("Recession", onlyInterest = TRUE, geo = "CA-ON")
+recession <- gtrendsR::gtrends("Recession", onlyInterest = TRUE, geo = "CA")
 recession1 <-data.frame(recession$interest_over_time)
 
 
-inflation <- gtrendsR::gtrends("Inflation", onlyInterest = TRUE, geo = "CA-ON")
+inflation <- gtrendsR::gtrends("Inflation", onlyInterest = TRUE, geo = "CA")
 inflation1 <-data.frame(inflation$interest_over_time)
 
 
-supplyChain <- gtrendsR::gtrends("Supply chain", onlyInterest = TRUE, geo = "CA-ON")
+supplyChain <- gtrendsR::gtrends("Supply chain", onlyInterest = TRUE, geo = "CA")
 supplyChain1 <-data.frame(supplyChain$interest_over_time)
 
 
